@@ -45,17 +45,18 @@ Probably theme will works with other plugin versions - but with versions below i
   <details><summary>Show details</summary>
   You can to install: "ACF Pro" - all features available or Basic ACF - is not available Home Page features and you'll not see comment images in admin due gallery and repeater features are not available in free version.<br>
   After installation go to ACF and sync fields.
-  ![ACF sync settings](https://github.com/chyvak1831/starter_img/blob/master/acf_sync.jpg?raw=true)</details>
+  <img src="https://github.com/chyvak1831/starter_img/blob/master/acf_sync.jpg?raw=true" alt="ACF sync settings"></details>
 * [Classic Editor](https://wordpress.org/plugins/classic-editor/) >= 1.6
 * [EWWW Image Optimizer](https://wordpress.org/plugins/ewww-image-optimizer/) >= 5.7.0
   <details><summary>Show details</summary>
-  After installation go to EWWW setting and enable 'WebP Conversion' & 'Force WebP'.![EWWW settings](https://github.com/chyvak1831/starter_img/blob/master/ewww.jpg?raw=true)</details>
+  After installation go to EWWW setting and enable 'WebP Conversion' & 'Force WebP'.
+  <img src="https://github.com/chyvak1831/starter_img/blob/master/ewww.jpg?raw=true" alt="EWWW settings"></details>
 *  [TinyMCE Advanced](https://wordpress.org/plugins/tinymce-advanced/) >= 5.5.0
     <details><summary>Show details</summary>
     After installation go to settings
-    ![TinyMCE settings 1](https://github.com/chyvak1831/starter_img/blob/master/wysiwyg_01.jpg?raw=true)
-    ![TinyMCE settings 2](https://github.com/chyvak1831/starter_img/blob/master/wysiwyg_02.jpg?raw=true)
-    ![TinyMCE settings 3](https://github.com/chyvak1831/starter_img/blob/master/wysiwyg_03.jpg?raw=true)
+    <img src="https://github.com/chyvak1831/starter_img/blob/master/wysiwyg_01.jpg?raw=true" alt="TinyMCE settings 1">
+    <img src="https://github.com/chyvak1831/starter_img/blob/master/wysiwyg_02.jpg?raw=true" alt="TinyMCE settings 2">
+    <img src="https://github.com/chyvak1831/starter_img/blob/master/wysiwyg_03.jpg?raw=true" alt="TinyMCE settings 3">
     and import settings
     
       ```json
