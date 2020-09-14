@@ -10,6 +10,8 @@ Open source, free to use - [MIT](https://choosealicense.com/licenses/mit/) licen
 - [Why you should to use this theme](#why)
 - [Installation](#installation)
   - [Requirements](#requirements)
+  - [Setup](#setup)
+  - [Build commands](#build-commands)
   - [Highly recommended/integrated to theme plugins](#recommended_plugins)
 - [Contributing](#contributing)
 - [License](#license)
