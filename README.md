@@ -15,6 +15,7 @@ Open source, free to use - [MIT](https://choosealicense.com/licenses/mit/) licen
   - [Highly recommended/integrated to theme plugins](#recommended_plugins)
 - [Contributing](#contributing)
 - [License](#license)
+<br>
 
 
 
@@ -22,13 +23,15 @@ Open source, free to use - [MIT](https://choosealicense.com/licenses/mit/) licen
 This theme keeps your time: it provides main ecommerce pages ready to easy and fast customize (home, catalog, single page) and a few great features which usually used or must have.
 
 #### Pros
-✓ easy to customize layout
-✓ load speed ready
-✓ retina ready
-✓ extended by a few cool features
+✓ easy to customize layout  
+✓ load speed ready  
+✓ retina ready  
+✓ extended by a few cool features  
 
 #### Cons
 frontend plugins are require code integration (shortcodes or functions usually) - due theme does not used hooks (i.e. just "install plugin and activate" - does not works)
+<br>
+<br>
 
 
 
@@ -75,35 +78,41 @@ Probably theme will works with other plugin versions - but with versions below i
       }
     ```
     </details>
-
 * [WooCommerce](https://wordpress.org/plugins/woocommerce/) >= 4.4.1
 * [W3 Total Cache](https://wordpress.org/plugins/w3-total-cache/) >= 0.14.4
 * [Node.js](https://nodejs.org/) >= 14.8.0
 
-
 #### Setup
 1. Install  [Requirements](#requirements)
 2. Install gulp globally (if is not installed yet) - do it once
-```bash
-npm i --global gulp-cli
-```
+    ```bash
+    npm i --global gulp-cli
+    ```
 3. Go to theme folder and run cmd/terminal and install packages
-```bash
-npm i
-```
+    ```bash
+    npm i
+    ```
 
 #### Build commands
-* Default task (for development):
-```bash
-gulp
-```
-* Production task:
-```bash
-gulp production
-```
+Default task (for development):
+  ```bash
+  gulp
+  ```  
+Production task:
+  ```bash
+  gulp production
+  ```
+<br>
+<br>
+
+
 
 ## Contributing
 Please open an issue first to discuss what you would like to change.
+<br>
+<br>
+
+
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
