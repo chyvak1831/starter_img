@@ -1,13 +1,13 @@
 # Starter
 
-Starter theme for WooCommerce.  
+Starter WooCommerce theme.  
 Open source, free to use - [MIT](https://choosealicense.com/licenses/mit/) license.
 
 
 
 ## Table of content
 
-- [Why you should to use theme](#why)
+- [Why you should to use this theme](#why)
 - [Installation](#installation)
   - [Requirements](#requirements)
   - [Highly recommended/integrated to theme plugins](#recommended_plugins)
@@ -16,17 +16,17 @@ Open source, free to use - [MIT](https://choosealicense.com/licenses/mit/) licen
 
 
 
-## Why you should to use theme?
+## Why you should to use this theme?
 This theme keeps your time: it provides main ecommerce pages ready to easy and fast customize (home, catalog, single page) and a few great features which usually used or must have.
 
 #### Pros
-* easy to customize layout
-* load speed ready
-* retina ready
-* extended by a few cool features
+✓ easy to customize layout
+✓ load speed ready
+✓ retina ready
+✓ extended by a few cool features
 
 #### Cons
-* frontend plugins are require code integration (shortcodes or functions usually) - due theme does not used hooks (i.e. just "install plugin and activate" - does not works)
+frontend plugins are require code integration (shortcodes or functions usually) - due theme does not used hooks (i.e. just "install plugin and activate" - does not works)
 
 
 
