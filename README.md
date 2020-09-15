@@ -33,7 +33,6 @@ This theme keeps your time: it provides main ecommerce pages ready to easy and f
 frontend plugins are require code integration (shortcodes or functions usually) - due theme does not used hooks (i.e. just "install plugin and activate" - does not works)
 ***
 <br>
-<br>
 
 
 
@@ -105,14 +104,14 @@ Production task:
   ```bash
   gulp production
   ```
-<br>
+***
 <br>
 
 
 
 ## Contributing
 Please open an issue first to discuss what you would like to change.
-<br>
+***
 <br>
 
 
