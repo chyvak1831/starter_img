@@ -15,6 +15,7 @@ Open source, free to use - [MIT](https://choosealicense.com/licenses/mit/) licen
   - [Highly recommended/integrated to theme plugins](#recommended_plugins)
 - [Contributing](#contributing)
 - [License](#license)
+***
 <br>
 
 
@@ -30,7 +31,7 @@ This theme keeps your time: it provides main ecommerce pages ready to easy and f
 
 #### Cons
 frontend plugins are require code integration (shortcodes or functions usually) - due theme does not used hooks (i.e. just "install plugin and activate" - does not works)
-<br>
+***
 <br>
 <br>
 
