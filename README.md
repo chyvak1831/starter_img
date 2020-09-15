@@ -7,14 +7,14 @@ Open source, free to use - [MIT](https://choosealicense.com/licenses/mit/) licen
 
 ## Table of content
 
-- [Why you should to use this theme](#about)
-- [Installation](#installation)
-  - [Requirements](#requirements)
-  - [Setup](#setup)
-  - [Build commands](#build-commands)
+- [About](#-about)
+- [Installation & Usage](#-installation--usage)
+  - [Requirements](#-requirements)
+  - [Setup](#-setup)
+  - [Build commands](#-build-commands)
   - [Highly recommended/integrated to theme plugins](#recommended_plugins)
-- [Contributing](#contributing)
-- [License](#license)
+- [Contributing](#-contributing)
+- [License](#-license)
 ***
 <br>
 
