@@ -7,7 +7,7 @@ Open source, free to use - [MIT](https://choosealicense.com/licenses/mit/) licen
 
 ## Table of content
 
-- [Why you should to use this theme](#why)
+- [Why you should to use this theme](#about)
 - [Installation](#installation)
   - [Requirements](#requirements)
   - [Setup](#setup)
@@ -20,23 +20,23 @@ Open source, free to use - [MIT](https://choosealicense.com/licenses/mit/) licen
 
 
 
-## Why you should to use this theme?
+## ❔ About
 This theme keeps your time: it provides main ecommerce pages ready to easy and fast customize (home, catalog, single page) and a few great features which usually used or must have.
 
-#### Pros
+#### ✔️ Pros
 ✓ easy to customize layout  
 ✓ load speed ready  
 ✓ retina ready  
 ✓ extended by a few cool features  
 
-#### Cons
+#### ‼️ Cons
 frontend plugins are require code integration (shortcodes or functions usually) - due theme does not used hooks (i.e. just "install plugin and activate" - does not works)
 ***
 <br>
 
 
 
-## Installation
+## 🔧 Installation & Usage
 
 #### Requirements
 Probably theme will works with other plugin versions - but with versions below it's tested.
@@ -109,12 +109,12 @@ Production task:
 
 
 
-## Contributing
+## 🤝 Contributing
 Please open an issue first to discuss what you would like to change.
 ***
 <br>
 
 
 
-## License
+## 📘 License
 [MIT](https://choosealicense.com/licenses/mit/)
