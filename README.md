@@ -181,7 +181,7 @@ themes/starter/   # → Root of Starter theme
 │   │   │   ├── comment-customizer.php      # → 
 │   │   │   └── comment.php                 # → 
 │   │   ├── filter/                         # → 
-│   │   │   ├── class-wc-widget-layered-nav # → 
+│   │   │   ├── class-wc-widget-layered-nav.php # → 
 │   │   │   └── filter.php                  # → 
 │   │   └── woocommerce.php                 # → 
 │   ├── customizer.php                      # → WordPress customizer
