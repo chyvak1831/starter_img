@@ -248,8 +248,10 @@ By default used 'Open Sans' font family.
 #### How to use
 1. Select any **google fonts**
 2. Copy-paste embed code into ```Appearance->Customize->Site Identity```
-3. Add **one** default font-family - used by default for whole site and as default font in wysiwyg editor
-![Fonts](https://github.com/chyvak1831/starter_img/blob/master/fonts_.gif?raw=true)
+3. Add **one** default font-family - used by default for whole site and as default font in wysiwyg editor  
+<details><summary>Open GIF example</summary>
+  <img src="https://github.com/chyvak1831/starter_img/blob/master/fonts.gif?raw=true" alt="Fonts">
+</details>
 <br>
 
 #### Benefits:  
