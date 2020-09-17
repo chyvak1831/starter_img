@@ -14,6 +14,7 @@ Open source, free to use - [MIT](https://choosealicense.com/licenses/mit/) licen
   - [Build commands](#-build-commands)
   - [Highly recommended/integrated to theme plugins](#recommended_plugins)
 - [Theme Structure](#-theme-structure)
+- [Filters](#-filters)
 - [Fonts](#-fonts)
 - [Contributing](#-contributing)
 - [License](#-license)
@@ -236,9 +237,12 @@ themes/starter/   # → Root of Starter theme
 
 
 
-## 🔠 Filters
+## 🔍 Filters
 Theme using default woo filter feature extended by custom cool features.  
-1. Added color picker for color filter  
+1. Color picker for color filter
+2. Display types for dekstop and mobile.
+***
+<br>
 
 
 
@@ -252,7 +256,6 @@ By default used 'Open Sans' font family.
 <details><summary>Open GIF example</summary>
   <img src="https://github.com/chyvak1831/starter_img/blob/master/fonts.gif?raw=true" alt="Fonts">
 </details>
-<br>
 
 #### Benefits:  
 ✓ add any google font family so fast & easy  
