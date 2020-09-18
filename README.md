@@ -89,7 +89,7 @@ Probably Starter will works with other plugin versions - but with versions below
 
 #### 🔧 Setup
 1. Install  [Requirements](#requirements)
-2. Install gulp globally (if is not installed yet) - do it once
+2. Install gulp globally (if it's not installed yet) - do it once
     ```bash
     npm i --global gulp-cli
     ```
@@ -238,7 +238,7 @@ themes/starter/   # → Root of Starter theme
 
 
 ## 🔍 Filters
-Starter using **default woo filter** feature (supported **price** and **attributes**) extended by custom cool features.  
+Starter uses **default woo filter** feature (supported **price** and **attributes** filters) extended by custom cool features.  
 Widget area for add fitlers to archive is **'Archive product'**.  
 How to work with default woo filter widgets - there are a lot info in internet, for example from official docs https://docs.woocommerce.com/document/woocommerce-widgets/ or see below *'Filter displays GIF example'*.
 
@@ -246,11 +246,13 @@ How to work with default woo filter widgets - there are a lot info in internet, 
 Fitlers has two custom selects for setup display type on front.
 #### How to use
 1. Open widgets
-2. Add fitler or expand existing and setup display types for dekstop and mobile (by default used 'list' type)
-<details><summary>Filter displays GIF example</summary>
+2. Add fitler (or expand existing) and **setup display types** for dekstop and mobile (by default used 'list' type)
+<details><summary>Filter display types GIF example</summary>
   <img src="https://github.com/chyvak1831/starter_img/blob/master/displaytype.gif?raw=true" alt="Filter: display type">
 </details>
 <br>
+#### Code
+
 
 ### 🔴⚫🔵 Color picker for color filter
 Usually using for color picker.
