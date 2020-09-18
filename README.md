@@ -238,7 +238,7 @@ themes/starter/   # → Root of Starter theme
 
 
 ## 🔍 Filters
-Theme using **default woo filter** feature (supported **price** and **attributes**) extended by custom cool features.  
+Starter using **default woo filter** feature (supported **price** and **attributes**) extended by custom cool features.  
 Widget area for add fitlers to archive is **'Archive product'**.  
 How to work with default woo filter widgets - there are a lot info in internet, for example from official docs https://docs.woocommerce.com/document/woocommerce-widgets/ or see below *'Filter displays GIF example'*.
 
