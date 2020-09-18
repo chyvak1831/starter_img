@@ -42,7 +42,7 @@ frontend plugins are require code integration (shortcodes or functions usually) 
 ## 🔧 Installation & Usage
 
 #### ✅ Requirements
-Probably theme will works with other plugin versions - but with versions below it's tested.
+Probably Starter will works with other plugin versions - but with versions below it's tested.
 * [WordPress](https://wordpress.org/) >= 5.5
 * [ACF](https://wordpress.org/plugins/advanced-custom-fields/) >= 5.9.0
   <details><summary>Show details</summary>
