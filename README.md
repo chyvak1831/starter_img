@@ -14,6 +14,7 @@ Open source, free to use - [MIT](https://choosealicense.com/licenses/mit/) licen
   - [Build commands](#-build-commands)
   - [Highly recommended/integrated to theme plugins](#recommended_plugins)
 - [Theme Structure](#-theme-structure)
+- [Filters](#-filters)
 - [Fonts](#-fonts)
 - [Contributing](#-contributing)
 - [License](#-license)
@@ -41,7 +42,7 @@ frontend plugins are require code integration (shortcodes or functions usually) 
 ## 🔧 Installation & Usage
 
 #### ✅ Requirements
-Probably theme will works with other plugin versions - but with versions below it's tested.
+Probably Starter will works with other plugin versions - but with versions below it's tested.
 * [WordPress](https://wordpress.org/) >= 5.5
 * [ACF](https://wordpress.org/plugins/advanced-custom-fields/) >= 5.9.0
   <details><summary>Show details</summary>
@@ -236,9 +237,33 @@ themes/starter/   # → Root of Starter theme
 
 
 
-## 🔠 Filters
-Theme using default woo filter feature extended by custom cool features.  
-1. Added color picker for color filter  
+## 🔍 Filters
+Starter using **default woo filter** feature (supported **price** and **attributes**) extended by custom cool features.  
+Widget area for add fitlers to archive is **'Archive product'**.  
+How to work with default woo filter widgets - there are a lot info in internet, for example from official docs https://docs.woocommerce.com/document/woocommerce-widgets/ or see below *'Filter displays GIF example'*.
+
+### 📄〽️〰️ Display types
+Fitlers has two custom selects for setup display type on front.
+#### How to use
+1. Open widgets
+2. Add fitler or expand existing and setup display types for dekstop and mobile (by default used 'list' type)
+<details><summary>Filter displays GIF example</summary>
+  <img src="https://github.com/chyvak1831/starter_img/blob/master/displaytype.gif?raw=true" alt="Filter: display type">
+</details>
+<br>
+
+### 🔴⚫🔵 Color picker for color filter
+Usually using for color picker.
+#### How to use
+0. Add filters to archive page via 'Archive Product' widget area.
+1. Open any attribute
+2. Add color 
+
+#### Code
+
+3. Selecting a filter does not reload page, unlike default woo, and the page reloads after user selected all filters and clicked 'Submit' 
+***
+<br>
 
 
 
@@ -247,14 +272,16 @@ By default used 'Open Sans' font family.
 
 #### How to use
 1. Select any **google fonts**
-2. Copy-paste embed code into ```Appearance->Customize->Site Identity```
-3. Add **one** default font-family - used by default for whole site and as default font in wysiwyg editor
-![Fonts](https://github.com/chyvak1831/starter_img/blob/master/fonts_.gif?raw=true)
+2. Copy-paste **embed code** into ```Appearance->Customize->Site Identity```
+3. Add **one** default font-family - used by default for whole site and as default font in wysiwyg editor  
+<details><summary>Fonts GIF example</summary>
+  <img src="https://github.com/chyvak1831/starter_img/blob/master/fonts.gif?raw=true" alt="Fonts">
+</details>
 <br>
 
 #### Benefits:  
 ✓ add any google font family so fast & easy  
-✓ use any google font family in WYSIWYG. All google fonts displays correctly immediatelly in WYSIWYG.  
+✓ use any google font family in WYSIWYG. All fonts displays correctly in WYSIWYG.  
 ✓ use any font-weight! For example 'Open Sans' with font-weight: 100 displays in admin 'Open Sans Light'
 <br>
 <br>
