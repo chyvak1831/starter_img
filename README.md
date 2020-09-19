@@ -13,10 +13,12 @@ Open source, free to use - [MIT](https://choosealicense.com/licenses/mit/) licen
   - [Setup](#-setup)
   - [Build commands](#-build-commands)
   - [Highly recommended/integrated to theme plugins](#recommended_plugins)
+- [Comments](#-comments)
 - [Filters](#-filters)
   - [Display types](#%EF%B8%8F%EF%B8%8F-display-types)
   - [Color filter](#-color-filter)
 - [Fonts](#-fonts)
+- [Menus](#-menus)
 - [Theme Structure](#-theme-structure)
 - [Contributing](#-contributing)
 - [License](#-license)
@@ -114,6 +116,13 @@ Production task:
 
 
 
+# 💬 Comments
+Used default wordpress 
+***
+<br>
+
+
+
 # 🔍 Filters
 Starter uses **default woo filter** feature (supported **price** and **attributes** filters) extended by custom cool features.  
 Widget area for add filters to archive is **'Archive product'**.  
@@ -139,6 +148,9 @@ In filter class fork ```inc\woocommerce\filterclass-wc-widget-layered-nav.php```
 #### How to use
 1. Open any attribute
 2. Add color
+<details><summary>Color filter GIF example</summary>
+  <img src="https://github.com/chyvak1831/starter_img/blob/master/colorfilter.gif?raw=true" alt="Color filter">
+</details>
 
 #### How it works?
 In filter class fork ```inc\woocommerce\filterclass-wc-widget-layered-nav.php``` added ACF ```Color taxonomy``` required minimum markup. Styled in file ```woo/_filters.scss```.
