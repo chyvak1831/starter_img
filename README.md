@@ -15,6 +15,8 @@ Open source, free to use - [MIT](https://choosealicense.com/licenses/mit/) licen
   - [Highly recommended/integrated to theme plugins](#recommended_plugins)
 - [Theme Structure](#-theme-structure)
 - [Filters](#-filters)
+  - [Display types](#-display-types)
+  - [Color picker for color filter](#-color-picker-for-color-filter)
 - [Fonts](#-fonts)
 - [Contributing](#-contributing)
 - [License](#-license)
@@ -239,8 +241,9 @@ themes/starter/   # → Root of Starter theme
 
 ## 🔍 Filters
 Starter uses **default woo filter** feature (supported **price** and **attributes** filters) extended by custom cool features.  
-Widget area for add fitlers to archive is **'Archive product'**.  
-How to work with default woo filter widgets - there are a lot info in internet, for example from official docs https://docs.woocommerce.com/document/woocommerce-widgets/ or see below *'Filter displays GIF example'*.
+Widget area for add filters to archive is **'Archive product'**.  
+How to work with default woo filter widgets - there are a lot info in internet, for example official docs https://docs.woocommerce.com/document/woocommerce-widgets/ or see below *'Filter display types GIF example'*.
+<br>
 
 ### 📄〽️〰️ Display types
 Fitlers has two custom selects for setup display type on front.
@@ -251,18 +254,32 @@ Fitlers has two custom selects for setup display type on front.
   <img src="https://github.com/chyvak1831/starter_img/blob/master/displaytype.gif?raw=true" alt="Filter: display type">
 </details>
 
-#### Code
-<br>
+#### How it works?
+In filter class fork ```inc\woocommerce\filterclass-wc-widget-layered-nav.php``` added ACF ```Filter widget``` for dekstop/mobile display types and added required minimum markup for dropdown and collapse. What to didplay (list, dropdown or collapse) depends on widget setting handled via css ```woo/_filters.scss```.
+<br><br>
 
 
-### 🔴⚫🔵 Color picker for color filter
-Usually using for color picker.
+### 🔴⚫🔵 Color filter
 #### How to use
 0. Add filters to archive page via 'Archive Product' widget area.
 1. Open any attribute
-2. Add color 
+2. Add color
+<br><br>
 
-#### Code
+#### How it works?
+In filter class fork ```inc\woocommerce\filterclass-wc-widget-layered-nav.php``` added ACF ```Color taxonomy``` required minimum markup. Styled in file ```woo/_filters.scss```.
+<br><br>
+
+### Code
+* ACF: ```Filter widget``` and ```Color taxonomy``` - select fields for display types and color field
+* css: ```woo/_filters.scss``` - // list, dropdown, collapse view mixins
+* js: ```filters.js```
+* tpl:
+    * ```woocommerce/archive-product.php```:
+      * `<!-- get active filters - used when 'No products found' so .js_form_filter form is empty -->` - get active filters
+      * `<!-- filters --`> - filters markup
+    * ```woocommerce/content-widget-price-filter.php``` - ovverride default woo price filter tpl
+* logic: ```inc/woocommerce/filter/filter.php``` - unregister default attr fitler and register fork; customize price filter layout - add ACF; Change Price Filter Widget Increment; customize text in Sort select; Register Archive page widget area
 
 3. Selecting a filter does not reload page, unlike default woo, and the page reloads after user selected all filters and clicked 'Submit' 
 ***
@@ -286,7 +303,6 @@ By default used 'Open Sans' font family.
 ✓ add any google font family so fast & easy  
 ✓ use any google font family in WYSIWYG. All fonts displays correctly in WYSIWYG.  
 ✓ use any font-weight! For example 'Open Sans' with font-weight: 100 displays in admin 'Open Sans Light'
-<br>
 <br>
 
 #### Code
