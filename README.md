@@ -29,7 +29,7 @@ Open source, free to use - [MIT](https://choosealicense.com/licenses/mit/) licen
 
 
 # ❔ About
-This theme keeps your time: it provides main ecommerce pages ready to easy and fast customize (home, catalog, single page) and a few great features which usually used or must have.
+This theme **keeps your time**: it provides main ecommerce pages ready to easy and fast customize (home, catalog, single page) and a few great **features which usually used or must have**.
 
 #### ✔️ Pros
 ✓ easy to customize layout  
