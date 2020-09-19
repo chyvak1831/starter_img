@@ -1,11 +1,11 @@
-# Starter
+# STARTER
 
 Starter WooCommerce theme.  
 Open source, free to use - [MIT](https://choosealicense.com/licenses/mit/) license.
 
 
 
-## Table of content
+# Table of content
 
 - [About](#-about)
 - [Installation & Usage](#-installation--usage)
@@ -15,7 +15,7 @@ Open source, free to use - [MIT](https://choosealicense.com/licenses/mit/) licen
   - [Highly recommended/integrated to theme plugins](#recommended_plugins)
 - [Theme Structure](#-theme-structure)
 - [Filters](#-filters)
-  - [Display types](#-display-types)
+  - [Display types](#%EF%B8%8F%EF%B8%8F-display-types)
   - [Color filter](#-color-filter)
 - [Fonts](#-fonts)
 - [Contributing](#-contributing)
@@ -25,7 +25,7 @@ Open source, free to use - [MIT](https://choosealicense.com/licenses/mit/) licen
 
 
 
-## ❔ About
+# ❔ About
 This theme keeps your time: it provides main ecommerce pages ready to easy and fast customize (home, catalog, single page) and a few great features which usually used or must have.
 
 #### ✔️ Pros
@@ -41,7 +41,7 @@ frontend plugins are require code integration (shortcodes or functions usually) 
 
 
 
-## 🔧 Installation & Usage
+# 🔧 Installation & Usage
 
 #### ✅ Requirements
 Probably Starter will works with other plugin versions - but with versions below it's tested.
@@ -114,7 +114,7 @@ Production task:
 
 
 
-## 📁 Theme structure
+# 📁 Theme structure
 
 ```bash
 themes/starter/   # → Root of Starter theme
@@ -239,7 +239,7 @@ themes/starter/   # → Root of Starter theme
 
 
 
-## 🔍 Filters
+# 🔍 Filters
 Starter uses **default woo filter** feature (supported **price** and **attributes** filters) extended by custom cool features.  
 Widget area for add filters to archive is **'Archive product'**.  
 How to work with default woo filter widgets - there are a lot info in internet, for example official docs https://docs.woocommerce.com/document/woocommerce-widgets/ or see below *'Filter display types GIF example'*.
@@ -261,7 +261,6 @@ In filter class fork ```inc\woocommerce\filterclass-wc-widget-layered-nav.php```
 
 ### 🔴⚫🔵 Color filter
 #### How to use
-0. Add filters to archive page via 'Archive Product' widget area.
 1. Open any attribute
 2. Add color
 
@@ -270,15 +269,15 @@ In filter class fork ```inc\woocommerce\filterclass-wc-widget-layered-nav.php```
 <br>
 
 ### Code
-* ACF: ```Filter widget``` and ```Color taxonomy``` - select fields for display types and color field
-* css: ```woo/_filters.scss``` - // list, dropdown, collapse view mixins
+* ACF: ```Filter widget``` and ```Color taxonomy```
+* css: ```woo/_filters.scss```
 * js: ```filters.js```
 * tpl:
     * ```woocommerce/archive-product.php```:
       * `<!-- get active filters - used when 'No products found' so .js_form_filter form is empty -->` - get active filters
       * `<!-- filters --`> - filters markup
     * ```woocommerce/content-widget-price-filter.php``` - ovverride default woo price filter tpl
-* logic: ```inc/woocommerce/filter/filter.php``` - unregister default attr fitler and register fork; customize price filter layout - add ACF; Change Price Filter Widget Increment; customize text in Sort select; Register Archive page widget area
+* logic: ```inc/woocommerce/filter/filter.php``` - unregister default attr fitler and register fork; customize price filter layout - add data from ACF; Change Price Filter Widget Increment; customize text in Sort select; Register Archive page widget area
 
 3. Selecting a filter does not reload page, unlike default woo, and the page reloads after user selected all filters and clicked 'Submit' 
 ***
@@ -286,7 +285,7 @@ In filter class fork ```inc\woocommerce\filterclass-wc-widget-layered-nav.php```
 
 
 
-## 🔠 Fonts
+# 🔠 Fonts
 By default used 'Open Sans' font family.  
 
 #### How to use
