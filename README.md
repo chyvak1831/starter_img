@@ -245,7 +245,7 @@ Widget area for add filters to archive is **'Archive product'**.
 How to work with default woo filter widgets - there are a lot info in internet, for example official docs https://docs.woocommerce.com/document/woocommerce-widgets/ or see below *'Filter display types GIF example'*.
 <br>
 
-### 📄〽️ Display types
+### Display types
 Fitlers has two custom selects for setup display type on front.
 #### How to use
 1. Open widgets
@@ -264,7 +264,6 @@ In filter class fork ```inc\woocommerce\filterclass-wc-widget-layered-nav.php```
 0. Add filters to archive page via 'Archive Product' widget area.
 1. Open any attribute
 2. Add color
-<br>
 
 #### How it works?
 In filter class fork ```inc\woocommerce\filterclass-wc-widget-layered-nav.php``` added ACF ```Color taxonomy``` required minimum markup. Styled in file ```woo/_filters.scss```.
