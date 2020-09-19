@@ -250,8 +250,9 @@ Fitlers has two custom selects for setup display type on front.
 <details><summary>Filter display types GIF example</summary>
   <img src="https://github.com/chyvak1831/starter_img/blob/master/displaytype.gif?raw=true" alt="Filter: display type">
 </details>
-<br>
+
 #### Code
+<br>
 
 
 ### 🔴⚫🔵 Color picker for color filter
