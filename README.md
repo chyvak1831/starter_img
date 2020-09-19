@@ -155,7 +155,7 @@ To filter class fork ```inc\woocommerce\filterclass-wc-widget-layered-nav.php```
 </details>
 
 #### How it works?
-In filter class fork ```inc\woocommerce\filterclass-wc-widget-layered-nav.php``` added ACF ```Color taxonomy``` required minimum markup. Styled in file ```woo/_filters.scss```.
+To filter class fork ```inc\woocommerce\filterclass-wc-widget-layered-nav.php``` added ACF ```Color taxonomy``` and required minimum markup. Styled in file ```woo/_filters.scss```.
 <br>
 
 ### 💭 Frontend filter logic
