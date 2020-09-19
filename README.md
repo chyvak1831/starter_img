@@ -245,7 +245,7 @@ Widget area for add filters to archive is **'Archive product'**.
 How to work with default woo filter widgets - there are a lot info in internet, for example official docs https://docs.woocommerce.com/document/woocommerce-widgets/ or see below *'Filter display types GIF example'*.
 <br>
 
-### 〽️📄 Display types
+### 📄〽️〰️ Display types
 Fitlers has two custom selects for setup display type on front.
 #### How to use
 1. Open widgets
