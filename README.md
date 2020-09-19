@@ -128,17 +128,14 @@ Fitlers has two custom selects for setup display type on front.
 <details><summary>Filter display types GIF example</summary>
   <img src="https://github.com/chyvak1831/starter_img/blob/master/displaytype.gif?raw=true" alt="Filter: display type">
 </details>
-
 #### How it works?
 In filter class fork ```inc\woocommerce\filterclass-wc-widget-layered-nav.php``` added ACF ```Filter widget``` for dekstop/mobile display types and added required minimum markup for dropdown and collapse. What to didplay (list, dropdown or collapse) depends on widget setting handled via css ```woo/_filters.scss```.
 <br><br>
-
 
 ### 🔴⚫🔵 Color filter
 #### How to use
 1. Open any attribute
 2. Add color
-
 #### How it works?
 In filter class fork ```inc\woocommerce\filterclass-wc-widget-layered-nav.php``` added ACF ```Color taxonomy``` required minimum markup. Styled in file ```woo/_filters.scss```.
 <br>
