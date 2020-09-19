@@ -43,7 +43,7 @@ frontend plugins are require code integration (shortcodes or functions usually) 
 
 # 🔧 Installation & Usage
 
-## ✅ Requirements
+### ✅ Requirements
 Probably Starter will works with other plugin versions - but with versions below it's tested.
 * [WordPress](https://wordpress.org/) >= 5.5
 * [ACF](https://wordpress.org/plugins/advanced-custom-fields/) >= 5.9.0
@@ -89,7 +89,7 @@ Probably Starter will works with other plugin versions - but with versions below
 * [W3 Total Cache](https://wordpress.org/plugins/w3-total-cache/) >= 0.14.4
 * [Node.js](https://nodejs.org/) >= 14.8.0
 
-## 🔧 Setup
+### 🔧 Setup
 1. Install  [Requirements](#requirements)
 2. Install gulp globally (if it's not installed yet) - do it once
     ```bash
@@ -100,7 +100,7 @@ Probably Starter will works with other plugin versions - but with versions below
     npm i
     ```
 
-## 🚀 Build commands
+### 🚀 Build commands
 Default task (for development):
   ```bash
   gulp
