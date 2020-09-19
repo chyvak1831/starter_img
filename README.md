@@ -1,11 +1,11 @@
-# Starter
+# STARTER
 
 Starter WooCommerce theme.  
 Open source, free to use - [MIT](https://choosealicense.com/licenses/mit/) license.
 
 
 
-## Table of content
+# Table of content
 
 - [About](#-about)
 - [Installation & Usage](#-installation--usage)
@@ -13,9 +13,13 @@ Open source, free to use - [MIT](https://choosealicense.com/licenses/mit/) licen
   - [Setup](#-setup)
   - [Build commands](#-build-commands)
   - [Highly recommended/integrated to theme plugins](#recommended_plugins)
-- [Theme Structure](#-theme-structure)
+- [Comments](#-comments)
 - [Filters](#-filters)
+  - [Display types](#%EF%B8%8F%EF%B8%8F-display-types)
+  - [Color filter](#-color-filter)
 - [Fonts](#-fonts)
+- [Menus](#-menus)
+- [Theme Structure](#-theme-structure)
 - [Contributing](#-contributing)
 - [License](#-license)
 ***
@@ -23,7 +27,7 @@ Open source, free to use - [MIT](https://choosealicense.com/licenses/mit/) licen
 
 
 
-## ❔ About
+# ❔ About
 This theme keeps your time: it provides main ecommerce pages ready to easy and fast customize (home, catalog, single page) and a few great features which usually used or must have.
 
 #### ✔️ Pros
@@ -39,9 +43,9 @@ frontend plugins are require code integration (shortcodes or functions usually) 
 
 
 
-## 🔧 Installation & Usage
+# 🔧 Installation & Usage
 
-#### ✅ Requirements
+### ✅ Requirements
 Probably Starter will works with other plugin versions - but with versions below it's tested.
 * [WordPress](https://wordpress.org/) >= 5.5
 * [ACF](https://wordpress.org/plugins/advanced-custom-fields/) >= 5.9.0
@@ -87,9 +91,9 @@ Probably Starter will works with other plugin versions - but with versions below
 * [W3 Total Cache](https://wordpress.org/plugins/w3-total-cache/) >= 0.14.4
 * [Node.js](https://nodejs.org/) >= 14.8.0
 
-#### 🔧 Setup
+### 🔧 Setup
 1. Install  [Requirements](#requirements)
-2. Install gulp globally (if is not installed yet) - do it once
+2. Install gulp globally (if it's not installed yet) - do it once
     ```bash
     npm i --global gulp-cli
     ```
@@ -98,7 +102,7 @@ Probably Starter will works with other plugin versions - but with versions below
     npm i
     ```
 
-#### 🚀 Build commands
+### 🚀 Build commands
 Default task (for development):
   ```bash
   gulp
@@ -112,7 +116,90 @@ Production task:
 
 
 
-## 📁 Theme structure
+# 💬 Comments
+Used **default wordpress comment** feature extended by custom cool features: recaptcha, ajax for submit comment and load to front, image field, extended rating.  
+### More documentation and examples *coming soon*!
+***
+<br>
+
+
+
+# 🔍 Filters
+Starter uses **default woo filter** feature (supported **price** and **attributes** filters) extended by custom cool features.  
+Widget area for add filters to archive is **'Archive product'**.  
+How to work with default woo filter widgets - there are a lot info in internet, for example official docs https://docs.woocommerce.com/document/woocommerce-widgets/ or see below *'Filter display types GIF example'*.
+<br>
+
+### 📄〽️〰️ Display types
+Fitlers has two custom selects for setup display type on front.
+
+#### How to use
+1. Open widgets
+2. Add fitler (or expand existing) and **setup display types** for dekstop and mobile (by default used 'list' type)
+<details><summary><strong>Filter display types GIF example</strong></summary>
+  <img src="https://github.com/chyvak1831/starter_img/blob/master/displaytype.gif?raw=true" alt="Filter: display type">
+</details>
+
+#### How it works?
+In filter class fork ```inc\woocommerce\filterclass-wc-widget-layered-nav.php``` added ACF ```Filter widget``` for dekstop/mobile display types and added required minimum markup for dropdown and collapse. What to didplay (list, dropdown or collapse) depends on widget setting handled via css ```woo/_filters.scss```.
+<br><br>
+
+### 🔴⚫🔵 Color filter
+
+#### How to use
+1. Open any attribute
+2. Add color
+<details><summary><strong>Color filter GIF example</strong></summary>
+  <img src="https://github.com/chyvak1831/starter_img/blob/master/colorfilter.gif?raw=true" alt="Color filter">
+</details>
+
+#### How it works?
+In filter class fork ```inc\woocommerce\filterclass-wc-widget-layered-nav.php``` added ACF ```Color taxonomy``` required minimum markup. Styled in file ```woo/_filters.scss```.
+<br>
+
+### Code
+* ACF: ```Filter widget``` and ```Color taxonomy```
+* css: ```woo/_filters.scss```
+* js: ```filters.js```
+* tpl:
+    * ```woocommerce/archive-product.php```:
+      * `<!-- get active filters - used when 'No products found' so .js_form_filter form is empty -->` - get active filters
+      * `<!-- filters --`> - filters markup
+    * ```woocommerce/content-widget-price-filter.php``` - ovverride default woo price filter tpl
+* logic: ```inc/woocommerce/filter/filter.php``` - unregister default attr fitler and register fork; customize price filter layout - add data from ACF; Change Price Filter Widget Increment; customize text in Sort select; Register Archive page widget area
+
+3. Selecting a filter does not reload page, unlike default woo, and the page reloads after user selected all filters and clicked 'Submit' 
+***
+<br>
+
+
+
+# 🔠 Fonts
+By default used 'Open Sans' font family.  
+
+#### How to use
+1. Select any **google fonts**
+2. Copy-paste **embed code** into ```Appearance->Customize->Site Identity```
+3. Add **one** default font-family - used by default for whole site and as default font in wysiwyg editor  
+<details><summary><strong>Fonts GIF example</strong></summary>
+  <img src="https://github.com/chyvak1831/starter_img/blob/master/fonts.gif?raw=true" alt="Fonts">
+</details>
+
+#### Benefits:  
+✓ add any google font family so fast & easy  
+✓ use any google font family in WYSIWYG. All fonts displays correctly in WYSIWYG.  
+✓ use any font-weight! For example 'Open Sans' with font-weight: 100 displays in admin 'Open Sans Light'
+<br>
+
+#### Code
+Whole code placed into file ```inc\tiny-mce-advanced.php comment``` "Google fonts feature"
+
+***
+<br>
+
+
+
+# 📁 Theme structure
 
 ```bash
 themes/starter/   # → Root of Starter theme
@@ -237,69 +324,12 @@ themes/starter/   # → Root of Starter theme
 
 
 
-## 🔍 Filters
-Starter using **default woo filter** feature (supported **price** and **attributes**) extended by custom cool features.  
-Widget area for add fitlers to archive is **'Archive product'**.  
-How to work with default woo filter widgets - there are a lot info in internet, for example from official docs https://docs.woocommerce.com/document/woocommerce-widgets/ or see below *'Filter displays GIF example'*.
-
-### 📄〽️〰️ Display types
-Fitlers has two custom selects for setup display type on front.
-#### How to use
-1. Open widgets
-2. Add fitler or expand existing and setup display types for dekstop and mobile (by default used 'list' type)
-<details><summary>Filter displays GIF example</summary>
-  <img src="https://github.com/chyvak1831/starter_img/blob/master/displaytype.gif?raw=true" alt="Filter: display type">
-</details>
-<br>
-
-### 🔴⚫🔵 Color picker for color filter
-Usually using for color picker.
-#### How to use
-0. Add filters to archive page via 'Archive Product' widget area.
-1. Open any attribute
-2. Add color 
-
-#### Code
-
-3. Selecting a filter does not reload page, unlike default woo, and the page reloads after user selected all filters and clicked 'Submit' 
-***
-<br>
-
-
-
-## 🔠 Fonts
-By default used 'Open Sans' font family.  
-
-#### How to use
-1. Select any **google fonts**
-2. Copy-paste **embed code** into ```Appearance->Customize->Site Identity```
-3. Add **one** default font-family - used by default for whole site and as default font in wysiwyg editor  
-<details><summary>Fonts GIF example</summary>
-  <img src="https://github.com/chyvak1831/starter_img/blob/master/fonts.gif?raw=true" alt="Fonts">
-</details>
-<br>
-
-#### Benefits:  
-✓ add any google font family so fast & easy  
-✓ use any google font family in WYSIWYG. All fonts displays correctly in WYSIWYG.  
-✓ use any font-weight! For example 'Open Sans' with font-weight: 100 displays in admin 'Open Sans Light'
-<br>
-<br>
-
-#### Code
-Whole code placed into file ```inc\tiny-mce-advanced.php comment``` "Google fonts feature"
-
-***
-<br>
-
-
-
-## 🤝 Contributing
+# 🤝 Contributing
 Please open an issue first to discuss what you would like to change.
 ***
 <br>
 
 
 
-## 📘 License
+# 📘 License
 [MIT](https://choosealicense.com/licenses/mit/)
