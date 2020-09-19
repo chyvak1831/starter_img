@@ -13,11 +13,11 @@ Open source, free to use - [MIT](https://choosealicense.com/licenses/mit/) licen
   - [Setup](#-setup)
   - [Build commands](#-build-commands)
   - [Highly recommended/integrated to theme plugins](#recommended_plugins)
-- [Theme Structure](#-theme-structure)
 - [Filters](#-filters)
   - [Display types](#%EF%B8%8F%EF%B8%8F-display-types)
   - [Color filter](#-color-filter)
 - [Fonts](#-fonts)
+- [Theme Structure](#-theme-structure)
 - [Contributing](#-contributing)
 - [License](#-license)
 ***
@@ -109,6 +109,77 @@ Production task:
   ```bash
   gulp production
   ```
+***
+<br>
+
+
+
+# 🔍 Filters
+Starter uses **default woo filter** feature (supported **price** and **attributes** filters) extended by custom cool features.  
+Widget area for add filters to archive is **'Archive product'**.  
+How to work with default woo filter widgets - there are a lot info in internet, for example official docs https://docs.woocommerce.com/document/woocommerce-widgets/ or see below *'Filter display types GIF example'*.
+<br>
+
+### 📄〽️〰️ Display types
+Fitlers has two custom selects for setup display type on front.
+#### How to use
+1. Open widgets
+2. Add fitler (or expand existing) and **setup display types** for dekstop and mobile (by default used 'list' type)
+<details><summary>Filter display types GIF example</summary>
+  <img src="https://github.com/chyvak1831/starter_img/blob/master/displaytype.gif?raw=true" alt="Filter: display type">
+</details>
+
+#### How it works?
+In filter class fork ```inc\woocommerce\filterclass-wc-widget-layered-nav.php``` added ACF ```Filter widget``` for dekstop/mobile display types and added required minimum markup for dropdown and collapse. What to didplay (list, dropdown or collapse) depends on widget setting handled via css ```woo/_filters.scss```.
+<br><br>
+
+
+### 🔴⚫🔵 Color filter
+#### How to use
+1. Open any attribute
+2. Add color
+
+#### How it works?
+In filter class fork ```inc\woocommerce\filterclass-wc-widget-layered-nav.php``` added ACF ```Color taxonomy``` required minimum markup. Styled in file ```woo/_filters.scss```.
+<br>
+
+### Code
+* ACF: ```Filter widget``` and ```Color taxonomy```
+* css: ```woo/_filters.scss```
+* js: ```filters.js```
+* tpl:
+    * ```woocommerce/archive-product.php```:
+      * `<!-- get active filters - used when 'No products found' so .js_form_filter form is empty -->` - get active filters
+      * `<!-- filters --`> - filters markup
+    * ```woocommerce/content-widget-price-filter.php``` - ovverride default woo price filter tpl
+* logic: ```inc/woocommerce/filter/filter.php``` - unregister default attr fitler and register fork; customize price filter layout - add data from ACF; Change Price Filter Widget Increment; customize text in Sort select; Register Archive page widget area
+
+3. Selecting a filter does not reload page, unlike default woo, and the page reloads after user selected all filters and clicked 'Submit' 
+***
+<br>
+
+
+
+# 🔠 Fonts
+By default used 'Open Sans' font family.  
+
+#### How to use
+1. Select any **google fonts**
+2. Copy-paste **embed code** into ```Appearance->Customize->Site Identity```
+3. Add **one** default font-family - used by default for whole site and as default font in wysiwyg editor  
+<details><summary>Fonts GIF example</summary>
+  <img src="https://github.com/chyvak1831/starter_img/blob/master/fonts.gif?raw=true" alt="Fonts">
+</details>
+
+#### Benefits:  
+✓ add any google font family so fast & easy  
+✓ use any google font family in WYSIWYG. All fonts displays correctly in WYSIWYG.  
+✓ use any font-weight! For example 'Open Sans' with font-weight: 100 displays in admin 'Open Sans Light'
+<br>
+
+#### Code
+Whole code placed into file ```inc\tiny-mce-advanced.php comment``` "Google fonts feature"
+
 ***
 <br>
 
@@ -234,77 +305,6 @@ themes/starter/   # → Root of Starter theme
 ├── screenshot.jpg                         # → Theme screenshot for WP admin
 └── style.css                              # → Theme meta information
 ```
-***
-<br>
-
-
-
-# 🔍 Filters
-Starter uses **default woo filter** feature (supported **price** and **attributes** filters) extended by custom cool features.  
-Widget area for add filters to archive is **'Archive product'**.  
-How to work with default woo filter widgets - there are a lot info in internet, for example official docs https://docs.woocommerce.com/document/woocommerce-widgets/ or see below *'Filter display types GIF example'*.
-<br>
-
-### 📄〽️〰️ Display types
-Fitlers has two custom selects for setup display type on front.
-#### How to use
-1. Open widgets
-2. Add fitler (or expand existing) and **setup display types** for dekstop and mobile (by default used 'list' type)
-<details><summary>Filter display types GIF example</summary>
-  <img src="https://github.com/chyvak1831/starter_img/blob/master/displaytype.gif?raw=true" alt="Filter: display type">
-</details>
-
-#### How it works?
-In filter class fork ```inc\woocommerce\filterclass-wc-widget-layered-nav.php``` added ACF ```Filter widget``` for dekstop/mobile display types and added required minimum markup for dropdown and collapse. What to didplay (list, dropdown or collapse) depends on widget setting handled via css ```woo/_filters.scss```.
-<br><br>
-
-
-### 🔴⚫🔵 Color filter
-#### How to use
-1. Open any attribute
-2. Add color
-
-#### How it works?
-In filter class fork ```inc\woocommerce\filterclass-wc-widget-layered-nav.php``` added ACF ```Color taxonomy``` required minimum markup. Styled in file ```woo/_filters.scss```.
-<br>
-
-### Code
-* ACF: ```Filter widget``` and ```Color taxonomy```
-* css: ```woo/_filters.scss```
-* js: ```filters.js```
-* tpl:
-    * ```woocommerce/archive-product.php```:
-      * `<!-- get active filters - used when 'No products found' so .js_form_filter form is empty -->` - get active filters
-      * `<!-- filters --`> - filters markup
-    * ```woocommerce/content-widget-price-filter.php``` - ovverride default woo price filter tpl
-* logic: ```inc/woocommerce/filter/filter.php``` - unregister default attr fitler and register fork; customize price filter layout - add data from ACF; Change Price Filter Widget Increment; customize text in Sort select; Register Archive page widget area
-
-3. Selecting a filter does not reload page, unlike default woo, and the page reloads after user selected all filters and clicked 'Submit' 
-***
-<br>
-
-
-
-# 🔠 Fonts
-By default used 'Open Sans' font family.  
-
-#### How to use
-1. Select any **google fonts**
-2. Copy-paste **embed code** into ```Appearance->Customize->Site Identity```
-3. Add **one** default font-family - used by default for whole site and as default font in wysiwyg editor  
-<details><summary>Fonts GIF example</summary>
-  <img src="https://github.com/chyvak1831/starter_img/blob/master/fonts.gif?raw=true" alt="Fonts">
-</details>
-
-#### Benefits:  
-✓ add any google font family so fast & easy  
-✓ use any google font family in WYSIWYG. All fonts displays correctly in WYSIWYG.  
-✓ use any font-weight! For example 'Open Sans' with font-weight: 100 displays in admin 'Open Sans Light'
-<br>
-
-#### Code
-Whole code placed into file ```inc\tiny-mce-advanced.php comment``` "Google fonts feature"
-
 ***
 <br>
 
