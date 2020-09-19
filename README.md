@@ -13,6 +13,7 @@ Open source, free to use - [MIT](https://choosealicense.com/licenses/mit/) licen
   - [Setup](#-setup)
   - [Build commands](#-build-commands)
   - [Highly recommended/integrated to theme plugins](#recommended_plugins)
+- [Overview](#-overview)
 - [Comments](#-comments)
 - [Filters](#-filters)
   - [Display types](#%EF%B8%8F%EF%B8%8F-display-types)
@@ -20,6 +21,7 @@ Open source, free to use - [MIT](https://choosealicense.com/licenses/mit/) licen
   - [Frontend filter logic](#-frontend-filter-logic)
   - [Code](#code)
 - [Fonts](#-fonts)
+- [Images](#-images)
 - [Menus](#-menus)
 - [Theme Structure](#-theme-structure)
 - [Contributing](#-contributing)
@@ -118,6 +120,12 @@ Production task:
 
 
 
+# Overview
+***
+<br>
+
+
+
 # 💬 Comments
 Used **default wordpress comment** feature extended by custom cool features: recaptcha, ajax for submit comment and load to front, image field, extended rating.  
 ### More documentation and examples *coming soon*!
@@ -203,8 +211,25 @@ By default used 'Open Sans' font family.
 <br>
 
 #### Code
-Whole code placed into file ```inc\tiny-mce-advanced.php comment``` "Google fonts feature"
+Whole code placed into file ```inc\tiny-mce-advanced.php``` comment "Google fonts feature"
+***
+<br>
 
+
+
+# 🌅 Images
+* Content images: optimized by EWWW Image Optimizer plugin. Each **image slices by each 200px** (200px, 400px, 600px etc) for deliver **best image sizes** for each device.  
+Starter support **webp images** with jpg/png fallback.
+* decor graphics: for decor elements uses **svg image spritesheet** ```assets\svg-icons.svg``` via ```starter_get_svg``` (fork of twentyseventeen/inc/icon-functions.php). This svg file loads via pure 'ajax' ```footer.php``` for make it cacheable.
+#### Code
+Whole code placed into file ```inc\image.php```.
+### More documentation and examples *coming soon*!
+***
+<br>
+
+
+
+# 🌅 Menus
 ***
 <br>
 
