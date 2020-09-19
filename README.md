@@ -18,6 +18,7 @@ Open source, free to use - [MIT](https://choosealicense.com/licenses/mit/) licen
   - [Display types](#%EF%B8%8F%EF%B8%8F-display-types)
   - [Color filter](#-color-filter)
   - [Frontend filter logic](#-frontend-filter-logic)
+  - [Code](#code)
 - [Fonts](#-fonts)
 - [Menus](#-menus)
 - [Theme Structure](#-theme-structure)
