@@ -176,7 +176,9 @@ In future filters will be added ajax support so all will works without reloads.
       * `<!-- get active filters - used when 'No products found' so .js_form_filter form is empty -->` - get active filters
       * `<!-- filters --`> - filters markup
     * ```woocommerce/content-widget-price-filter.php``` - ovverride default woo price filter tpl
-* logic: ```inc/woocommerce/filter/filter.php``` - unregister default attr fitler and register fork; customize price filter layout - add data from ACF; Change Price Filter Widget Increment; customize text in Sort select; Register Archive page widget area
+* logic:
+    * ```inc/woocommerce/filter/filter.php``` - unregister default attr fitler and register fork; customize price filter layout - add data from ACF; Change Price Filter Widget Increment; customize text in Sort select; Register Archive page widget area
+    * ```inc/woocommerce/filter/class-wc-widget-layered-nav.php``` - fork of default woo Widget filter
 ***
 <br>
 
