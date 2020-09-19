@@ -16,7 +16,7 @@ Open source, free to use - [MIT](https://choosealicense.com/licenses/mit/) licen
 - [Theme Structure](#-theme-structure)
 - [Filters](#-filters)
   - [Display types](#-display-types)
-  - [Color picker for color filter](#-color-picker-for-color-filter)
+  - [Color picker for color filter](#-color-filter)
 - [Fonts](#-fonts)
 - [Contributing](#-contributing)
 - [License](#-license)
@@ -245,7 +245,7 @@ Widget area for add filters to archive is **'Archive product'**.
 How to work with default woo filter widgets - there are a lot info in internet, for example official docs https://docs.woocommerce.com/document/woocommerce-widgets/ or see below *'Filter display types GIF example'*.
 <br>
 
-### 📄〽️〰️ Display types
+### 📄〽️ Display types
 Fitlers has two custom selects for setup display type on front.
 #### How to use
 1. Open widgets
@@ -264,11 +264,11 @@ In filter class fork ```inc\woocommerce\filterclass-wc-widget-layered-nav.php```
 0. Add filters to archive page via 'Archive Product' widget area.
 1. Open any attribute
 2. Add color
-<br><br>
+<br>
 
 #### How it works?
 In filter class fork ```inc\woocommerce\filterclass-wc-widget-layered-nav.php``` added ACF ```Color taxonomy``` required minimum markup. Styled in file ```woo/_filters.scss```.
-<br><br>
+<br>
 
 ### Code
 * ACF: ```Filter widget``` and ```Color taxonomy``` - select fields for display types and color field
@@ -297,7 +297,6 @@ By default used 'Open Sans' font family.
 <details><summary>Fonts GIF example</summary>
   <img src="https://github.com/chyvak1831/starter_img/blob/master/fonts.gif?raw=true" alt="Fonts">
 </details>
-<br>
 
 #### Benefits:  
 ✓ add any google font family so fast & easy  
