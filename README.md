@@ -160,7 +160,10 @@ To filter class fork ```inc\woocommerce\filterclass-wc-widget-layered-nav.php```
 
 ### 💭 Frontend filter logic
 Default woo uses for filter links: by each click page reloads with new query string in URL.  
-Starter **uses fork of default woo filters** ```inc\woocommerce\filterclass-wc-widget-layered-nav.php``` where link logic replaced into checkboxes: by click each filter only getting select status (checkbox checked or unchecked) without page reloading, i.e. **in fact filters are collects via js** ```filters.js```. When user selected filters - he can submit form and page reloads.
+Starter **uses fork of default woo filters** ```inc\woocommerce\filterclass-wc-widget-layered-nav.php``` where link logic replaced into checkboxes: by each click filter only getting select status (checkbox checked or unchecked) without page reloading, i.e. **in fact filters are collects via js** ```filters.js```. When user selected filters - he can submit form and page reloads.
+<details><summary><strong>Frontend filter logic GIF example</strong></summary>
+  <img src="https://github.com/chyvak1831/starter_img/blob/master/colorfilter.gif?raw=true" alt="Frontend filter logic">
+</details>
 
 In future filters will be added ajax support so all will works without reloads. 
 
