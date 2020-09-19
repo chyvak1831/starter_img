@@ -13,12 +13,15 @@ Open source, free to use - [MIT](https://choosealicense.com/licenses/mit/) licen
   - [Setup](#-setup)
   - [Build commands](#-build-commands)
   - [Highly recommended/integrated to theme plugins](#recommended_plugins)
+- [Overview](#-overview)
 - [Comments](#-comments)
 - [Filters](#-filters)
   - [Display types](#%EF%B8%8F%EF%B8%8F-display-types)
   - [Color filter](#-color-filter)
   - [Frontend filter logic](#-frontend-filter-logic)
+  - [Code](#code)
 - [Fonts](#-fonts)
+- [Images](#-images)
 - [Menus](#-menus)
 - [Theme Structure](#-theme-structure)
 - [Contributing](#-contributing)
@@ -117,6 +120,12 @@ Production task:
 
 
 
+# Overview
+***
+<br>
+
+
+
 # 💬 Comments
 Used **default wordpress comment** feature extended by custom cool features: recaptcha, ajax for submit comment and load to front, image field, extended rating.  
 ### More documentation and examples *coming soon*!
@@ -142,8 +151,8 @@ Fitlers has two custom selects for setup display type on front.
 </details>
 
 #### How it works?
-In filter class fork ```inc\woocommerce\filterclass-wc-widget-layered-nav.php``` added ACF ```Filter widget``` for dekstop/mobile display types and added required minimum markup for dropdown and collapse. What to didplay (list, dropdown or collapse) depends on widget setting handled via css ```woo/_filters.scss```.
-<br><br>
+To filter class fork ```inc\woocommerce\filterclass-wc-widget-layered-nav.php``` added ACF ```Filter widget``` for dekstop/mobile display types and added required minimum markup for dropdown and collapse. Filter diplay type settings handled via css ```woo/_filters.scss```.
+<br>
 
 ### 🔴⚫🔵 Color filter
 
@@ -155,12 +164,15 @@ In filter class fork ```inc\woocommerce\filterclass-wc-widget-layered-nav.php```
 </details>
 
 #### How it works?
-In filter class fork ```inc\woocommerce\filterclass-wc-widget-layered-nav.php``` added ACF ```Color taxonomy``` required minimum markup. Styled in file ```woo/_filters.scss```.
+To filter class fork ```inc\woocommerce\filterclass-wc-widget-layered-nav.php``` added ACF ```Color taxonomy``` and required minimum markup. Styled in file ```woo/_filters.scss```.
 <br>
 
 ### 💭 Frontend filter logic
 Default woo uses for filter links: by each click page reloads with new query string in URL.  
-Starter **uses fork of default woo filters** ```inc\woocommerce\filterclass-wc-widget-layered-nav.php``` where link logic replaced into checkboxes: by click each filter only getting select status (checkbox checked or unchecked) without page reloading, i.e. **in fact filters are collects via js** ```filters.js```. When user selected filters - he can submit form and page reloads.
+Starter **uses fork of default woo filters** ```inc\woocommerce\filterclass-wc-widget-layered-nav.php``` where link logic replaced into checkboxes: by each click filter only getting select status (checkbox checked or unchecked) without page reloading, i.e. **in fact filters are collects via js** ```filters.js```. When user selected filters - he can submit form and page reloads.
+<details><summary><strong>Frontend filter logic GIF example</strong></summary>
+  <img src="https://github.com/chyvak1831/starter_img/blob/master/colorfilter.gif?raw=true" alt="Frontend filter logic">
+</details>
 
 In future filters will be added ajax support so all will works without reloads. 
 
@@ -173,7 +185,9 @@ In future filters will be added ajax support so all will works without reloads.
       * `<!-- get active filters - used when 'No products found' so .js_form_filter form is empty -->` - get active filters
       * `<!-- filters --`> - filters markup
     * ```woocommerce/content-widget-price-filter.php``` - ovverride default woo price filter tpl
-* logic: ```inc/woocommerce/filter/filter.php``` - unregister default attr fitler and register fork; customize price filter layout - add data from ACF; Change Price Filter Widget Increment; customize text in Sort select; Register Archive page widget area
+* logic:
+    * ```inc/woocommerce/filter/filter.php``` - unregister default attr fitler and register fork; customize price filter layout - add data from ACF; Change Price Filter Widget Increment; customize text in Sort select; Register Archive page widget area
+    * ```inc/woocommerce/filter/class-wc-widget-layered-nav.php``` - fork of default woo Widget filter
 ***
 <br>
 
@@ -197,8 +211,25 @@ By default used 'Open Sans' font family.
 <br>
 
 #### Code
-Whole code placed into file ```inc\tiny-mce-advanced.php comment``` "Google fonts feature"
+Whole code placed into file ```inc\tiny-mce-advanced.php``` comment "Google fonts feature"
+***
+<br>
 
+
+
+# 🌅 Images
+* Content images: optimized by EWWW Image Optimizer plugin. Each **image slices by each 200px** (200px, 400px, 600px etc) for deliver **best image sizes** for each device.  
+Starter support **webp images** with jpg/png fallback.
+* decor graphics: for decor elements uses **svg image spritesheet** ```assets\svg-icons.svg``` via ```starter_get_svg``` (fork of twentyseventeen/inc/icon-functions.php). This svg file loads via pure 'ajax' ```footer.php``` for make it cacheable.
+#### Code
+Whole code placed into file ```inc\image.php```.
+### More documentation and examples *coming soon*!
+***
+<br>
+
+
+
+# 🌅 Menus
 ***
 <br>
 
