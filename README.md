@@ -240,8 +240,8 @@ Add **simple menu** - that's default wordpress menu.
 </details>
 
 Add **image and icons** :
- * replace link 'Home' into image logo; in example used svg logo, it's possible to use any image format but highly recommended to use svg
- * replace text links 'Wishlist' & 'Cart' into svg icons - allowed svg only
+ * image: it's possible to use any image format but highly recommended to use svg
+ * icons: allowed svg only
   <details><summary><strong>Image and icons GIF example</strong></summary>
     <img src="https://github.com/chyvak1831/starter_img/blob/master/menu_img_icon.gif?raw=true" alt="Menu Image Icon">
   </details>
