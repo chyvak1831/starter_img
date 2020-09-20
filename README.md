@@ -124,6 +124,13 @@ Add port 4000 for to get browserSync reloads.
   ```bash
   gulp production
   ```
+
+
+### Highly recommended/integrated to theme plugins
+* [Advanced Woo Search](https://wordpress.org/plugins/advanced-woo-search/) >= 2.09 [Example how to use Search here](#user-content-widgets_example)
+* [WP Widget in Navigation](https://wordpress.org/plugins/wp-widget-in-navigation/) >= 2.0.1
+* [TI WooCommerce Wishlist](https://wordpress.org/plugins/ti-woocommerce-wishlist/) >= 1.21.2
+* [Yoast SEO](https://wordpress.org/plugins/wordpress-seo/) >= 14.8.1
 ***
 <br>
 
@@ -294,7 +301,7 @@ There are 6 menu locations are provided by Starter: 'Header Top Area', 'Header M
 **III)** Add **widgets to menus**: so far we used simple links in menus - let's to add **interactive elements**!  
 To use widgets in menus install plugin *WP Widget in Navigation* -> goto 'Appearance->Widgets' and **drag&drop** default widgets or widgets provided by plugins. 
 See example below how to setup minicart, woo search and AWS search, TI wishlist.
-<details><summary><strong>Widgets (search, minicart, wishlist) in menu GIF example</strong></summary>
+<details id="widgets_example"><summary><strong>Widgets (search, minicart, wishlist) in menu GIF example</strong></summary>
   <img src="https://github.com/chyvak1831/starter_img/blob/master/menu_widgets.gif?raw=true" alt="Menu Image Icon">
 </details>
 
