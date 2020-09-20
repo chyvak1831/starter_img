@@ -147,7 +147,7 @@ Fitlers has two custom selects for setup display type on front.
 1. Open widgets
 2. Add fitler (or expand existing) and **setup display types** for dekstop and mobile (by default used 'list' type)
 <details><summary><strong>Filter display types GIF example</strong></summary>
-  <img src="https://github.com/chyvak1831/starter_img/blob/master/displaytype.gif?raw=true" alt="Filter: display type">
+  <img src="https://github.com/chyvak1831/starter_img/blob/master/filter_display_type.gif?raw=true" alt="Filter: display type">
 </details>
 
 #### How it works?
@@ -160,7 +160,7 @@ To filter class fork ```inc\woocommerce\filterclass-wc-widget-layered-nav.php```
 1. Open any attribute
 2. Add color
 <details><summary><strong>Color filter GIF example</strong></summary>
-  <img src="https://github.com/chyvak1831/starter_img/blob/master/colorfilter.gif?raw=true" alt="Color filter">
+  <img src="https://github.com/chyvak1831/starter_img/blob/master/filter_color.gif?raw=true" alt="Color filter">
 </details>
 
 #### How it works?
@@ -171,7 +171,7 @@ To filter class fork ```inc\woocommerce\filterclass-wc-widget-layered-nav.php```
 Default woo uses for filter links: by each click page reloads with new query string in URL.  
 Starter **uses fork of default woo filters** ```inc\woocommerce\filterclass-wc-widget-layered-nav.php``` where link logic replaced into checkboxes: by each click filter only getting select status (checkbox checked or unchecked) without page reloading, i.e. **in fact filters are collects via js** ```filters.js```. When user selected filters - he can submit form and page reloads.
 <details><summary><strong>Frontend filter logic GIF example</strong></summary>
-  <img src="https://github.com/chyvak1831/starter_img/blob/master/colorfilter.gif?raw=true" alt="Frontend filter logic">
+  <img src="https://github.com/chyvak1831/starter_img/blob/master/filter_demonstration.gif?raw=true" alt="Frontend filter logic">
 </details>
 
 In future filters will be added ajax support so all will works without reloads. 
@@ -302,6 +302,7 @@ themes/starter/   # → Root of Starter theme
 │   │   │   |   ├── _components.scss        # → Collect all component files
 │   │   │   |   ├── _footer.scss            # → Footer
 │   │   │   |   ├── _header.scss            # → Header
+│   │   │   |   ├── _minicart.scss          # → Default woo widget minicart
 │   │   │   |   ├── _modal.scss             # → Modal
 │   │   │   |   └── _wishlist.scss          # → TI wishlist plugin styles
 │   │   │   ├── mixins/                     # → Mixins
