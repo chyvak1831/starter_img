@@ -129,7 +129,7 @@ Add port 4000 for to get browserSync reloads.
 
 
 
-# Overview
+# 🌀 Overview
 ### Templates
 The main difference in development in Starter is **custom templates**: instead of hell with hooks just use **raw data** from woo! For example: instead of getting thumbnails with 💩-markup - just get ids array and use with any your own markup!
 ```php
