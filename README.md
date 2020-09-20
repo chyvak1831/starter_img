@@ -12,7 +12,7 @@ Open source, free to use - [MIT](https://choosealicense.com/licenses/mit/) licen
   - [Requirements](#-requirements)
   - [Setup](#-setup)
   - [Build commands](#-build-commands)
-  - [Highly recommended/integrated to theme plugins](#recommended_plugins)
+  - [Highly recommended/integrated to theme plugins](#-highly-recommendedintegrated-to-theme-plugins)
 - [Overview (**Important to read**)](#-overview)
   - [Templates](#templates)
   - [Gulp](#gulp)
@@ -127,10 +127,15 @@ Add port 4000 for to get browserSync reloads.
 
 
 ### 👍 Highly recommended/integrated to theme plugins
-* [Advanced Woo Search](https://wordpress.org/plugins/advanced-woo-search/) >= 2.09 [Example how to use Search here](#user-content-widgets_example)
-* [WP Widget in Navigation](https://wordpress.org/plugins/wp-widget-in-navigation/) >= 2.0.1
-* [TI WooCommerce Wishlist](https://wordpress.org/plugins/ti-woocommerce-wishlist/) >= 1.21.2
+* [Advanced Woo Search](https://wordpress.org/plugins/advanced-woo-search/) >= 2.09 (example using [here](#user-content-widgets_example))
+* [WP Widget in Navigation](https://wordpress.org/plugins/wp-widget-in-navigation/) >= 2.0.1 (example using [here](#user-content-widgets_example))
+* [TI WooCommerce Wishlist](https://wordpress.org/plugins/ti-woocommerce-wishlist/) >= 1.21.2 (example using [here](#user-content-widgets_example))
+  <details><summary>Minimum recommnded settings</summary>
+    After installation go to TI Wishlist and setup custom images, enable 'Remove product from Wishlist on second click', disable 'Show button text' for catalog, single and counter. You can to play with other settings.</details>
 * [Yoast SEO](https://wordpress.org/plugins/wordpress-seo/) >= 14.8.1
+  <details><summary>Enable breadcrumb</summary>
+  After installation go to SEO->Search Appearance-> tab Breadcrumbs and enable 'Enable Breadcrumbs'
+  <img src="https://github.com/chyvak1831/starter_img/blob/master/breadcrumb.jpg?raw=true" alt="Breadcrumbs Yoast SEO"></details>
 ***
 <br>
 
