@@ -126,7 +126,7 @@ Add port 4000 for to get browserSync reloads.
   ```
 
 
-### Highly recommended/integrated to theme plugins
+### 👍 Highly recommended/integrated to theme plugins
 * [Advanced Woo Search](https://wordpress.org/plugins/advanced-woo-search/) >= 2.09 [Example how to use Search here](#user-content-widgets_example)
 * [WP Widget in Navigation](https://wordpress.org/plugins/wp-widget-in-navigation/) >= 2.0.1
 * [TI WooCommerce Wishlist](https://wordpress.org/plugins/ti-woocommerce-wishlist/) >= 1.21.2
