@@ -306,7 +306,7 @@ There are 6 menu locations are provided by Starter: 'Header Top Area', 'Header M
 **III)** Add **widgets to menus**: so far we used simple links in menus - let's to add **interactive elements**!  
 To use widgets in menus install plugin *WP Widget in Navigation* -> goto 'Appearance->Widgets' and **drag&drop** default widgets or widgets provided by plugins. 
 See example below how to setup minicart, woo search and AWS search, TI wishlist.
-<details id="widgets_example"><summary><strong>Widgets (search, minicart, wishlist) in menu GIF example</strong></summary>
+<details id="widgets_example"><summary><strong>Widgets (search, minicart, TI wishlist) in menu GIF example</strong></summary>
   <img src="https://github.com/chyvak1831/starter_img/blob/master/menu_widgets.gif?raw=true" alt="Menu Image Icon">
 </details>
 
