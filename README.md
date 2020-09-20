@@ -237,8 +237,9 @@ There are 6 menu locations are provided by Starter: 'Header Top Area', 'Header M
 Add **simple menu** - that's default wordpress menu.
 <details><summary><strong>Simple menu GIF example</strong></summary>
   <img src="https://github.com/chyvak1831/starter_img/blob/master/menu_simple.gif?raw=true" alt="Menu Simple">
-</details>  
-Add **image and icons**:
+</details>
+
+Add **image and icons** :
  * replace link 'Home' into image logo; in example used svg logo, it's possible to use any image format but highly recommended to use svg
  * replace text links 'Wishlist' & 'Cart' into svg icons - allowed svg only
   <details><summary><strong>Image and icons GIF example</strong></summary>
