@@ -12,8 +12,12 @@ Open source, free to use - [MIT](https://choosealicense.com/licenses/mit/) licen
   - [Requirements](#-requirements)
   - [Setup](#-setup)
   - [Build commands](#-build-commands)
-  - [Highly recommended/integrated to theme plugins](#recommended_plugins)
-- [Overview](#-overview)
+  - [Highly recommended/integrated to theme plugins](#-highly-recommendedintegrated-to-theme-plugins)
+- [Overview (**Important to read**)](#-overview)
+  - [Templates](#templates)
+  - [Gulp](#gulp)
+  - [CSS](#css)
+  - [JS](#js)
 - [Comments](#-comments)
 - [Filters](#-filters)
   - [Display types](#%EF%B8%8F%EF%B8%8F-display-types)
@@ -32,6 +36,7 @@ Open source, free to use - [MIT](https://choosealicense.com/licenses/mit/) licen
 
 
 # ❔ About
+You **don't like digging in woo hooks** to implement client's design? If yes - say 🖕 to hooks and develop woo shop using custom templates!  
 This theme **keeps your time**: it provides main ecommerce pages ready to easy and fast customize (home, catalog, single page) and a few great **features which usually used or must have**.
 
 #### ✔️ Pros
@@ -41,7 +46,7 @@ This theme **keeps your time**: it provides main ecommerce pages ready to easy a
 ✓ extended by a few cool features  
 
 #### ‼️ Cons
-frontend plugins are require code integration (shortcodes or functions usually) - due theme does not used hooks (i.e. just "install plugin and activate" - does not works)
+frontend plugins are require **code integration** (shortcodes or functions usually) - due **theme does not used hooks** (i.e. just "install plugin and activate" - does not works)
 ***
 <br>
 
@@ -107,20 +112,72 @@ Probably Starter will works with other plugin versions - but with versions below
     ```
 
 ### 🚀 Build commands
-Default task (for development):
+Development preparation: open file ```config.js``` and replace each ```yourdomain``` into your local domain; ```URLtosinglepage``` should be replaced into URL to one of your single page (needs for generate critical CSS).  
+
+**Default task** (for development):
   ```bash
   gulp
   ```  
-Production task:
+Add port 4000 for to get browserSync reloads.
+
+**Production task**:
   ```bash
   gulp production
   ```
+
+
+### 👍 Highly recommended/integrated to theme plugins
+* [Advanced Woo Search](https://wordpress.org/plugins/advanced-woo-search/) >= 2.09 (example using [here](#user-content-widgets_example))
+* [WP Widget in Navigation](https://wordpress.org/plugins/wp-widget-in-navigation/) >= 2.0.1 (example using [here](#user-content-widgets_example))
+* [TI WooCommerce Wishlist](https://wordpress.org/plugins/ti-woocommerce-wishlist/) >= 1.21.2 (example using [here](#user-content-widgets_example))
+  <details><summary>Minimum recommnded settings</summary>
+    After installation go to TI Wishlist and setup custom images, enable 'Remove product from Wishlist on second click', disable 'Show button text' for catalog, single and counter. You can to play with other settings.</details>
+* [Yoast SEO](https://wordpress.org/plugins/wordpress-seo/) >= 14.8.1
+  <details><summary>Enable breadcrumb</summary>
+  After installation go to SEO->Search Appearance-> tab Breadcrumbs and enable 'Enable Breadcrumbs'
+  <img src="https://github.com/chyvak1831/starter_img/blob/master/breadcrumb.jpg?raw=true" alt="Breadcrumbs Yoast SEO"></details>
 ***
 <br>
 
 
 
-# Overview
+# 🌀 Overview
+### Templates
+The main difference in development in Starter is **custom templates**: instead of hell with hooks just use **raw data** from woo! For example: instead of getting thumbnails with 💩-markup - just get ids array and use with any your own markup!
+```php
+$product->get_gallery_image_ids() //get thumbnail ids on single page
+```
+and use it with any markup
+```php
+<?php foreach ( $starter_thumbnails as $starter_thumbnail_img ) : ?>
+  <picture class="thumbnail js_thumbnail" data-zoom-img="<?php echo esc_attr( wp_get_attachment_image_src( $starter_thumbnail_img, 'w2000' )[0] ); ?>">
+    <?php echo do_shortcode( "[img img_src='w200' img_sizes='70px' img_object=\"$starter_thumbnail_img\"]" ); ?>
+  </picture>
+<?php endforeach; ?>
+```
+Theme contain custom tempaltes for **home, archive, single**.  
+**Account/cart/checkout** are not ovverrided, they are styled using css (and a bit js for to add css classes) because usually these pages very similar and *it's not easy* to get raw data and *to maintain*  (due so much logic present on checkout for example).
+
+### Gulp
+Styles and scripts processed by gulp.  
+All development dependencies and plugins listed in file ```package.json```.  
+File ```gulpfile.js``` contain gulp tasks.  
+File ```config.js``` contain configs. 
+
+### CSS
+Styles orginized by scss, there are postCSS autoprefixer - so please **forgot about prefixes**.
+1. **Plugins** downloads via npm, listed in file ```package.json```.  
+Plugins **combines into** one file ```assets\css\plugins.css``` by gulp, all files listed in file ```assets\scss\plugins.scss```.  
+In file ```assets\scss\plugins.scss``` you can to comment **bootstrap css modules which is not used** by you.  
+2. **Custom styles** ```assets\scss\theme``` combines into one file ```assets\css\styles.css``` by gulp, all files listed in file ```assets\scss\styles.scss```.  
+File ```assets\scss\wp_admin.scss``` contain *css which loads to WordPress admin*.
+3. **Critical CSS** and **preload**: for to avoid render-blocking CSS each rel='stylesheet' replaced into rel='preload'. As result there is [FOUC](https://en.wikipedia.org/wiki/Flash_of_unstyled_content) - so it's required to have *critical CSS*.  
+Critical CSS generates gulp using npm [Critical](https://www.npmjs.com/package/critical), all files listed into ```config.js``` array criticalSrcPages. If you need - feel free to edit this array how you need.
+
+### JS
+1. **Plugins** downloads via npm, listed in file ```package.json```.  
+Plugins **combines into** one file ```assets\js\plugins.js``` by gulp, all files listed in file ```assets\js\list_plugins.js```. In file ```assets\js\list_plugins.js``` you can to comment **bootstrap js modules which is not used** by you.  
+2. **Custom scripts** ```assets\js\modules``` combines into one file ```assets\js\scripts.js``` by gulp, all files listed in file ```assets\js\list_scripts.js```.
 ***
 <br>
 
@@ -249,7 +306,7 @@ There are 6 menu locations are provided by Starter: 'Header Top Area', 'Header M
 **III)** Add **widgets to menus**: so far we used simple links in menus - let's to add **interactive elements**!  
 To use widgets in menus install plugin *WP Widget in Navigation* -> goto 'Appearance->Widgets' and **drag&drop** default widgets or widgets provided by plugins. 
 See example below how to setup minicart, woo search and AWS search, TI wishlist.
-<details><summary><strong>Widgets (search, minicart, wishlist) in menu GIF example</strong></summary>
+<details id="widgets_example"><summary><strong>Widgets (search, minicart, wishlist) in menu GIF example</strong></summary>
   <img src="https://github.com/chyvak1831/starter_img/blob/master/menu_widgets.gif?raw=true" alt="Menu Image Icon">
 </details>
 
