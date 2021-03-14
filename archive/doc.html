@@ -40,17 +40,29 @@
 		// END load navigation
 
 		// load page by click
-		$( document ).on( 'click', '.js_wrap_navigation a', function( e ) {
+		function load_ajax_content( currentLink, pushToHistory = false ) {
 			$( '.js_wrap_navigation a' ).removeClass( 'active' );
-			$( this ).addClass( 'active' );
-			var url = 'https://raw.githubusercontent.com/chyvak1831/starter_img/master/archive/' + location.search.slice(1) + '/' + $( this).attr( 'href' ).slice(1) + '.md'
+			$( '.js_wrap_navigation a[href="#' + currentLink + '"]' ).addClass( 'active' );
+			if ( pushToHistory ) {
+				history.pushState( null, null, location.pathname + location.search + '#' + currentLink );
+			}
+			var url = 'https://raw.githubusercontent.com/chyvak1831/starter_img/master/archive/' + location.search.slice(1) + '/' + currentLink + '.md';
 			$.ajax({
 				url: url,
 				success: function ( data ) {
 					$( '.js_doc_content' ).html( marked( data ) );
 				}
 			})
+		}
+		$( document ).on( 'click', '.js_wrap_navigation a', function( e ) {
+			e.preventDefault();
+			var currentLink = $( this).attr( 'href' ).slice(1);
+			load_ajax_content( currentLink, true );
+			e.stopPropagation();
 		})
+		window.onpopstate = function() {
+			load_ajax_content( location.hash.slice(1) );
+		}
 		// END load page by click
 
 	} );
