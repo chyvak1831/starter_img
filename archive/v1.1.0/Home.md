@@ -1,0 +1,1 @@
+This is **ARCHIVED** documentation for <a href="https://github.com/chyvak1831/starter/tree/v1.1.0">Starter Theme v1.1.0</a>
