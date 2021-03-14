@@ -10,7 +10,7 @@ File `assets\scss\wp_admin.scss` contain *css which loads to WordPress admin*.
 
 It's available to disable critical/preload in `Customizer->Dev functions->CSS optimization` (for example - while you're developing critical could cause problems).
 <details><summary>Show screenshot</summary>
- <img src="https://raw.githubusercontent.com/wiki/chyvak1831/starter/archive/v1.1.0/screenshots/css_optimization.jpg" alt="Customizer - CSS optimization">
+ <img src="https://raw.githubusercontent.com/chyvak1831/starter_img/master/archive/v1.1.0/screenshots/css_optimization.jpg" alt="Customizer - CSS optimization">
 </details>
 <br><br>
 

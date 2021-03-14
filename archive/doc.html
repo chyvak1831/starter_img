@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Starter Archive Documentation</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<style>
+		img {
+			height: auto;
+			max-width: 100%;
+		}
+	</style>
+</head>
+<body>
+
+	<div class="container">
+		<h1 class="mb-4">Starter Archive Documentation</h1>
+		<div class="row">
+			<div class="col-md-9 js_doc_content"></div>
+			<div class="col-md-3 js_wrap_navigation"></div>
+		</div>
+	</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+<script>
+	$( function() {
+
+		// load navigation
+		$.ajax({
+			url: 'https://raw.githubusercontent.com/chyvak1831/starter_img/master/archive/' + location.search.slice(1) + '/navigation.md',
+			success: function ( data ) {
+				$( '.js_wrap_navigation' ).html( data );
+				$( '.js_wrap_navigation a[href="' + location.hash + '"]' ).click();
+			}
+		})
+		// END load navigation
+
+		// load page by click
+		$( document ).on( 'click', '.js_wrap_navigation a', function( e ) {
+			$( '.js_wrap_navigation a' ).removeClass( 'active' );
+			$( this ).addClass( 'active' );
+			var url = 'https://raw.githubusercontent.com/chyvak1831/starter_img/master/archive/' + location.search.slice(1) + '/' + $( this).attr( 'href' ).slice(1) + '.md'
+			$.ajax({
+				url: url,
+				success: function ( data ) {
+					$( '.js_doc_content' ).html( marked( data ) );
+				}
+			})
+		})
+		// END load page by click
+
+	} );
+</script>
+</body>
+</html>

@@ -12,8 +12,8 @@ Fitlers has two custom selects for setup display type on front.
 1. Open widgets
 2. Add fitler (or expand existing) and **setup display types** for dekstop and mobile (by default used 'list' type)
 <details id="filter_display_type_example"><summary><strong>Filter display types example</strong></summary>
-	<a href="https://raw.githubusercontent.com/wiki/chyvak1831/starter/archive/v1.1.0/screenshots/filter/filter_display_type.mp4">Download this video example</a><br>
-	<img width="600" src="https://raw.githubusercontent.com/wiki/chyvak1831/starter/archive/v1.1.0/screenshots/filter/filter_display_type.gif" alt="Filter: display type">
+	<a href="https://raw.githubusercontent.com/chyvak1831/starter_img/master/archive/v1.1.0/screenshots/filter/filter_display_type.mp4">Download this video example</a><br>
+	<img width="600" src="https://raw.githubusercontent.com/chyvak1831/starter_img/master/archive/v1.1.0/screenshots/filter/filter_display_type.gif" alt="Filter: display type">
 </details>
 
 #### How it works?
@@ -28,8 +28,8 @@ To the filter class fork `inc\woocommerce\filter\class-wc-widget-layered-nav.php
 1. Open any attribute
 2. Add color
 <details><summary><strong>Color filter example</strong></summary>
-	<a href="https://raw.githubusercontent.com/wiki/chyvak1831/starter/archive/v1.1.0/screenshots/filter/filter_color.mp4">Download this video example</a><br>
-	<img width="600" src="https://raw.githubusercontent.com/wiki/chyvak1831/starter/archive/v1.1.0/screenshots/filter/filter_color.gif" alt="Filter: color">
+	<a href="https://raw.githubusercontent.com/chyvak1831/starter_img/master/archive/v1.1.0/screenshots/filter/filter_color.mp4">Download this video example</a><br>
+	<img width="600" src="https://raw.githubusercontent.com/chyvak1831/starter_img/master/archive/v1.1.0/screenshots/filter/filter_color.gif" alt="Filter: color">
 </details>
 
 #### How it works?
@@ -42,8 +42,8 @@ To filter class fork `inc\woocommerce\filterclass-wc-widget-layered-nav.php` add
 Default woo uses for filter links: by each click page reloads with new query string in URL.  
 Starter **uses fork of default woo filters** `inc\woocommerce\filterclass-wc-widget-layered-nav.php` where link logic replaced into checkboxes: by each click filter only getting select status (checkbox checked or unchecked) without page reloading, i.e. **in fact filters are collects via js** `assets\js\modules\filters.js`. When user selected filters - he can submit form and page reloads.
 <details><summary><strong>Frontend filter logic example</strong></summary>
-	<a href="https://raw.githubusercontent.com/wiki/chyvak1831/starter/archive/v1.1.0/screenshots/filter/filter_demonstration.mp4">Download this video example</a><br>
-	<img width="600" src="https://raw.githubusercontent.com/wiki/chyvak1831/starter/archive/v1.1.0/screenshots/filter/filter_demonstration.gif" alt="Filter: frontend logic">
+	<a href="https://raw.githubusercontent.com/chyvak1831/starter_img/master/archive/v1.1.0/screenshots/filter/filter_demonstration.mp4">Download this video example</a><br>
+	<img width="600" src="https://raw.githubusercontent.com/chyvak1831/starter_img/master/archive/v1.1.0/screenshots/filter/filter_demonstration.gif" alt="Filter: frontend logic">
 </details>
 
 In future for filters will be added ajax support so all will works without reloads. 
