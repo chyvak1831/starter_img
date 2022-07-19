@@ -9,7 +9,7 @@ How to work with default woo filter widgets - there are a lot info in internet, 
 Starter allows to enable **ajax for sort/filter and pagination without plugins**!  
 By default this feature disabled, can be enabled into customizer.
 <details><summary><strong>Where to enable ajax for sort/filter & pagination</strong></summary>
-	<img width="600" src="https://raw.githubusercontent.com/chyvak1831/starter_img/master/archive/v1.2.0/screenshots/filter/filter_ajax.jpg" alt="Filter: Ajax">
+	<img width="600" src="https://raw.githubusercontent.com/chyvak1831/starter_img/master/screenshots/filter/since1.2.0/filter_ajax.jpg" alt="Filter: Ajax">
 </details>
 
 #### How it works?
@@ -25,8 +25,8 @@ Fitlers has two custom selects for setup display type on front.
 1. Open widgets
 2. Add fitler (or expand existing) and **setup display types** for dekstop and mobile (by default used 'list' type)
 <details id="filter_display_type_example"><summary><strong>Filter display types example</strong></summary>
-	<a href="https://raw.githubusercontent.com/chyvak1831/starter_img/master/archive/v1.2.0/screenshots/filter/filter_display_type.mp4">Download this video example</a><br>
-	<img width="600" src="https://raw.githubusercontent.com/chyvak1831/starter_img/master/archive/v1.2.0/screenshots/filter/filter_display_type.gif" alt="Filter: display type">
+	<a href="https://raw.githubusercontent.com/chyvak1831/starter_img/master/screenshots/filter/filter_display_type.mp4">Download this video example</a><br>
+	<img width="600" src="https://raw.githubusercontent.com/chyvak1831/starter_img/master/screenshots/filter/filter_display_type.gif" alt="Filter: display type">
 </details>
 
 #### How it works?
@@ -41,8 +41,8 @@ Filter markup is customized in file `inc\filter.php`: added ACF `Filter widget` 
 1. Open any attribute
 2. Add color
 <details><summary><strong>Color filter example</strong></summary>
-	<a href="https://raw.githubusercontent.com/chyvak1831/starter_img/master/archive/v1.2.0/screenshots/filter/filter_color.mp4">Download this video example</a><br>
-	<img width="600" src="https://raw.githubusercontent.com/chyvak1831/starter_img/master/archive/v1.2.0/screenshots/filter/filter_color.gif" alt="Filter: color">
+	<a href="https://raw.githubusercontent.com/chyvak1831/starter_img/master/screenshots/filter/filter_color.mp4">Download this video example</a><br>
+	<img width="600" src="https://raw.githubusercontent.com/chyvak1831/starter_img/master/screenshots/filter/filter_color.gif" alt="Filter: color">
 </details>
 
 #### How it works?
