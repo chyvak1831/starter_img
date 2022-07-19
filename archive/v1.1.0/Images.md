@@ -13,8 +13,8 @@ It output inline svg which displays in the same high quality on screen with any 
 </svg>
 ```
 <details><summary><strong>Add bootstrap svg example</strong></summary>
-  <a href="https://raw.githubusercontent.com/chyvak1831/starter_img/master/archive/v1.1.0/screenshots/bootstrapsvg.mp4">Download this video example</a><br>
-  <img width="600" src="https://raw.githubusercontent.com/chyvak1831/starter_img/master/archive/v1.1.0/screenshots/bootstrapsvg.gif" alt="Add bootstrap svg">
+  <a href="https://raw.githubusercontent.com/chyvak1831/starter_img/master/screenshots/images/bootstrapsvg.mp4">Download this video example</a><br>
+  <img width="600" src="https://raw.githubusercontent.com/chyvak1831/starter_img/master/screenshots/images/bootstrapsvg.gif" alt="Add bootstrap svg">
 </details>
 <br><br>
 
@@ -62,8 +62,8 @@ It output next markup to frontend:
 All images loads with native browser lazyload (attribute `loading="lazy"`).
 <details id="content_img_example"><summary><strong>Add image example</strong></summary>
   Everything what you need <strong>to provide optimized image size</strong> for specific device - it's to setup <strong>correct sizes attribute</strong>: go through <strong>each breakpoint</strong> and setup image size. Breakpoint depends on your styles, in an example below used default bootstrap => default bootstrap breakpoints.
-  <a href="https://raw.githubusercontent.com/chyvak1831/starter_img/master/archive/v1.1.0/screenshots/addimg.mp4">Download this video example</a><br>
-  <img width="600" src="https://raw.githubusercontent.com/chyvak1831/starter_img/master/archive/v1.1.0/screenshots/addimg.gif" alt="Add image">
+  <a href="https://raw.githubusercontent.com/chyvak1831/starter_img/master/screenshots/images/addimg.mp4">Download this video example</a><br>
+  <img width="600" src="https://raw.githubusercontent.com/chyvak1831/starter_img/master/screenshots/images/addimg.gif" alt="Add image">
 </details>
 <br><br>
 

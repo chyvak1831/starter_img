@@ -2,7 +2,7 @@
 Starter uses recaptcha v2.  
 Google recaptcha keys are required and available to setup in `Customizer->WooCommerce->Recaptcha`.
 <details><summary>Show screenshot</summary>
- <img src="https://raw.githubusercontent.com/chyvak1831/starter_img/master/archive/v1.1.0/screenshots/recaptcha.jpg" alt="Recaptcha">
+ <img src="https://raw.githubusercontent.com/chyvak1831/starter_img/master/screenshots/recaptcha/recaptcha.jpg" alt="Recaptcha">
 </details>
 
 Please notice: **recaptcha loads lazyload** when user starts to interact with form (for avoid influence on pagespeed).
