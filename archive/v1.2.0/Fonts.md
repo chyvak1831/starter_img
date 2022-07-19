@@ -5,8 +5,8 @@ By default used 'Open Sans' font family.
 2. Copy-paste **embed code** into ```Appearance->Customize->Site Identity```
 3. Add **one** default font-family - used by default for whole site and as default font in wysiwyg editor  
 <details><summary><strong>Fonts example</strong></summary>
-	<a href="https://raw.githubusercontent.com/wiki/chyvak1831/starter/screenshots/fonts.mp4">Download this video example</a><br>
-	<img width="600" src="https://raw.githubusercontent.com/wiki/chyvak1831/starter/screenshots/fonts.gif" alt="Fonts">
+	<a href="https://raw.githubusercontent.com/chyvak1831/starter_img/master/screenshots/fonts/fonts.mp4">Download this video example</a><br>
+	<img width="600" src="https://raw.githubusercontent.com/chyvak1831/starter_img/master/screenshots/fonts/fonts.gif" alt="Fonts">
 </details>
 <br>
 

@@ -1,7 +1,7 @@
 ### There are two options for setup homepage:
 1. **By default homepage displays 10 latest products** - default WordPress feature, `index.php` is a template.
     <details><summary>Show details</summary>
-     <img src="https://raw.githubusercontent.com/wiki/chyvak1831/starter/screenshots/homepage/homepage01.jpg" alt="Homepage default template">
+     <img src="https://raw.githubusercontent.com/chyvak1831/starter_img/master/screenshots/homepage/homepage01.jpg" alt="Homepage default template">
     </details>
 
 2. You can to setup static page as homepage, **Starter has custom template** `templates\page-home.php` specially for that.  
@@ -12,17 +12,17 @@ Create page firstly using template 'Home'.
    _Best aspect ratio_ tip for each device provided.  
    Also optionally you can to _setup link for each slide_.
       <details><summary>Show details</summary>
-       <img src="https://raw.githubusercontent.com/wiki/chyvak1831/starter/screenshots/homepage/homepage03.jpg" alt="Homepage custom template - fullwidth-container carousel">
+       <img src="https://raw.githubusercontent.com/chyvak1831/starter_img/master/screenshots/homepage/homepage03.jpg" alt="Homepage custom template - fullwidth-container carousel">
       </details>
 
    2. **Product featured lists.**  
    Starter home template allows to create product featured list with title which displays as carousels.
       <details><summary>Show details</summary>
-       <img src="https://raw.githubusercontent.com/wiki/chyvak1831/starter/screenshots/homepage/homepage04.jpg" alt="Homepage custom template - collections">
+       <img src="https://raw.githubusercontent.com/chyvak1831/starter_img/master/screenshots/homepage/homepage04.jpg" alt="Homepage custom template - collections">
       </details>
     When page created - setup it as static page.
     <details><summary>Show details</summary>
-     <img src="https://raw.githubusercontent.com/wiki/chyvak1831/starter/screenshots/homepage/homepage02.jpg" alt="Homepage custom template">
+     <img src="https://raw.githubusercontent.com/chyvak1831/starter_img/master/screenshots/homepage/homepage02.jpg" alt="Homepage custom template">
     </details>
 <br>
 

@@ -31,7 +31,7 @@ Default WP "discussion" setting located at `/wp-admin/options-discussion.php`.
 **Aren't all** default features supports by Starter.
 
 ### Default post settings
-<img src="https://raw.githubusercontent.com/wiki/chyvak1831/starter/screenshots/comment/01.jpg" alt="Comment - Default post settings">
+<img src="https://raw.githubusercontent.com/chyvak1831/starter_img/master/screenshots/comment/01.jpg" alt="Comment - Default post settings">
 
 * **"Attempt to notify any blogs linked to from the post"** and **"Allow link notifications from other blogs (pingbacks and trackbacks) on new posts"** - is recommended to keep disabled (why - read [here](https://themeisle.com/blog/wordpress-pingbacks/)).  
 * **"Allow people to submit comments on new posts"** - only changing default state of Woo **"Advanced->Enable reviews"** setting when new product is been creating ([see](#single-product-page))
@@ -39,7 +39,7 @@ Default WP "discussion" setting located at `/wp-admin/options-discussion.php`.
 
 
 ### Other comment settings
-<img src="https://raw.githubusercontent.com/wiki/chyvak1831/starter/screenshots/comment/03.jpg" alt="Comment - Other comment setting">
+<img src="https://raw.githubusercontent.com/chyvak1831/starter_img/master/screenshots/comment/03.jpg" alt="Comment - Other comment setting">
 
 * **Comment author must fill out name and email** - it require name&email for submit comment.
 <br>Files:
@@ -61,14 +61,14 @@ Default WP "discussion" setting located at `/wp-admin/options-discussion.php`.
 
 
 ### Email me whenever, Before a comment appears, Comment Moderation, Disallowed Comment Keys
-<img src="https://raw.githubusercontent.com/wiki/chyvak1831/starter/screenshots/comment/04.jpg" alt="Comment - Moderation">
+<img src="https://raw.githubusercontent.com/chyvak1831/starter_img/master/screenshots/comment/04.jpg" alt="Comment - Moderation">
 
 All these settings pure backend - so works as expected.
 <br><br>
 
 
 ### Avatars
-<img src="https://raw.githubusercontent.com/wiki/chyvak1831/starter/screenshots/comment/05.jpg" alt="Comment - Avatar">
+<img src="https://raw.githubusercontent.com/chyvak1831/starter_img/master/screenshots/comment/05.jpg" alt="Comment - Avatar">
 
 Does not supports
 <br><br><br><br><br>
@@ -81,7 +81,7 @@ Default woo "reviews" setting located at `/wp-admin/admin.php?page=wc-settings&t
 **All** default woo features supports by Starter.
 
 ### Enable reviews
-<img src="https://raw.githubusercontent.com/wiki/chyvak1831/starter/screenshots/comment/06.jpg" alt="Woo reviews">
+<img src="https://raw.githubusercontent.com/chyvak1831/starter_img/master/screenshots/comment/06.jpg" alt="Woo reviews">
 
 * **Enable product reviews** - enable/disable all reviews for all products: when disabled in loops and on single page displays nothing.
 <br>Files:
@@ -98,7 +98,7 @@ Default woo "reviews" setting located at `/wp-admin/admin.php?page=wc-settings&t
 
 
 ### Product ratings
-<img src="https://raw.githubusercontent.com/wiki/chyvak1831/starter/screenshots/comment/07.jpg" alt="Woo rating">
+<img src="https://raw.githubusercontent.com/chyvak1831/starter_img/master/screenshots/comment/07.jpg" alt="Woo rating">
 
 * **Enable star rating on reviews** - enable/disable rating.
 <br>Files:
@@ -115,7 +115,7 @@ Default woo "reviews" setting located at `/wp-admin/admin.php?page=wc-settings&t
 
 
 ### Single product page
-<img src="https://raw.githubusercontent.com/wiki/chyvak1831/starter/screenshots/comment/02.jpg" alt="Comment - Single Product">
+<img src="https://raw.githubusercontent.com/chyvak1831/starter_img/master/screenshots/comment/02.jpg" alt="Comment - Single Product">
 
 Works **only when [reviews enabled for all products](#enable-reviews)** - allow to disable reviews only for some certain products.  
 Files:
@@ -130,7 +130,7 @@ Files:
 Comments extended by a few _cool_ features, each can be enabled/disabled in customizer `/wp-admin/customize.php` -> WooCommerce -> Comments.
 
 ### Extended rating
-<img src="https://raw.githubusercontent.com/wiki/chyvak1831/starter/screenshots/comment/08.jpg" alt="Comment - Extended rating">
+<img src="https://raw.githubusercontent.com/chyvak1831/starter_img/master/screenshots/comment/08.jpg" alt="Comment - Extended rating">
 
 Extend default rating up to 3 separate ratings.  
 **Default rating**: available to change by changing value in inputs `.js_rating_input`.  
@@ -149,7 +149,7 @@ Files:
 
 
 ### Low-rating popup
-<img src="https://raw.githubusercontent.com/wiki/chyvak1831/starter/screenshots/comment/09.jpg" alt="Comment - Low-rating popup">
+<img src="https://raw.githubusercontent.com/chyvak1831/starter_img/master/screenshots/comment/09.jpg" alt="Comment - Low-rating popup">
 
 Display popup when low rating comment - low rating is < 4 by default (can be changed in attribute `data-minimum-rating="4"`).  
 Files:
@@ -161,7 +161,7 @@ Files:
 
 
 ### "Privacy Policy" checkbox
-<img src="https://raw.githubusercontent.com/wiki/chyvak1831/starter/screenshots/comment/10.jpg" alt="Comment - 'Privacy Policy' checkbox">
+<img src="https://raw.githubusercontent.com/chyvak1831/starter_img/master/screenshots/comment/10.jpg" alt="Comment - 'Privacy Policy' checkbox">
 
 Block sending comment without privacy agreeing.  
 Files:
@@ -173,7 +173,7 @@ Files:
 
 
 ### Fileuploader
-<img src="https://raw.githubusercontent.com/wiki/chyvak1831/starter/screenshots/comment/12.jpg" alt="Comment - File">
+<img src="https://raw.githubusercontent.com/chyvak1831/starter_img/master/screenshots/comment/12.jpg" alt="Comment - File">
 
 Files:
  * `inc\woocommerce\comment\comment-backend.php`
@@ -187,7 +187,7 @@ Files:
 
 
 ### Ajax load comments
-<img src="https://raw.githubusercontent.com/wiki/chyvak1831/starter/screenshots/comment/13.jpg" alt="Comment - Break comments">
+<img src="https://raw.githubusercontent.com/chyvak1831/starter_img/master/screenshots/comment/13.jpg" alt="Comment - Break comments">
 
 If to setup default WordPress setting 'Break comments into pages with' (and when amount of comments > then setup number) - on single page in comments section appears button 'Show more', by click on this button comments loads via ajax.
 Files:
