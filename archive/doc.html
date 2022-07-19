@@ -50,7 +50,7 @@
 			$.ajax({
 				url: url,
 				success: function ( data ) {
-					$( '.js_doc_content' ).html( marked( data ) );
+					$( '.js_doc_content' ).html( marked.parse( data ) );
 				}
 			})
 		}
